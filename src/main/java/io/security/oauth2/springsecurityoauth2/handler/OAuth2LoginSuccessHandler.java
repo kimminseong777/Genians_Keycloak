@@ -25,7 +25,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
             String state = keycloakUser.getState();
             if(state.equals("dashboard")){
                 // dashboard 페이지로 리디렉트
-                getRedirectStrategy().sendRedirect(request, response, "/dashboard");
+                getRedirectStrategy().sendRedirect(request, response, "/account");
             } else {
                 // 기본 페이지로 리디렉트
                 getRedirectStrategy().sendRedirect(request, response, "/");

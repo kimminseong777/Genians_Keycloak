@@ -1,0 +1,24 @@
+server:
+  port: 18080
+
+keycloak:
+  enabled: true
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://sdevtest.genians.kr:30010/realms/test
+
+# Custom properties begin here
+ws:
+  api:
+    path: /ws/api/v1/*
+  port:
+    type:
+      name: ProductsPort
+  target:
+    namespace: https://sdevtest.genians.kr/springbootsoap/keycloak
+  location:
+    uri: https://sdevtest.genians.kr:18080/ws/api/v1/

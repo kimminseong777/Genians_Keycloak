@@ -1,11 +1,11 @@
-#keycloak:
-#    realm: Test
-#    auth-server-url: https://sdevtest.genians.kr:30010/realms/Test
-#    resource: oauth2-client-app
-#    bearer-only: true
-#    ssl-required: external
-#    principal-attribute: subject
-#    use-resource-role-mappings: true
+keycloak:
+    realm: test
+    auth-server-url: https://sdevtest.genians.kr:30010/realms/test
+    resource: login-app
+    bearer-only: true
+    ssl-required: external
+    principal-attribute: preferred_username
+    use-resource-role-mappings: true
 
 server:
     port: 30010

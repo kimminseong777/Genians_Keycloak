@@ -23,7 +23,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
             // 인증 성공 후 리디렉트할 URL을 state 값에 따라 결정
             KeycloakUser keycloakUser = (KeycloakUser) token.getPrincipal();
             String state = keycloakUser.getState();
-            if(state.equals("dashboard")){
+            if(state.equals("account")){
                 // dashboard 페이지로 리디렉트
                 getRedirectStrategy().sendRedirect(request, response, "/account");
             } else {

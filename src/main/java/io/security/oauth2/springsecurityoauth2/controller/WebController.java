@@ -65,4 +65,6 @@ public class WebController {
         customer2.setServiceRendered("Important services");
         customerDAO.save(customer2);
     }
+    
+
 }

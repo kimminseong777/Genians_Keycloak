@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  gs_spring:
+    image: springio/security-app
+    ports:
+      - "30010:8443"
+
